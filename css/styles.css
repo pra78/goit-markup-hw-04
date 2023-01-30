@@ -6,6 +6,7 @@
     --cloud-color: #F4F4FD;
     --ocean-color: #404BBF;
     --cornflower-color: #E7E9FC;
+    --light-slate-color: #8E8F99;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -169,6 +170,11 @@ body {
 
 /* ========= Hero ========= */
 .hero-section {
+    background-color: var(--navy-blue-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url("../images/people-office.jpg");
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -210,6 +216,19 @@ body {
     margin-right: 24px;
 }
 
+.thumb {
+    background-color: var(--cloud-color);
+    margin-bottom: 8px;
+}
+
+.advantages-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 112px;
+
+}
+
 /* ========= Work Examples ========= */
 .examples-section {
     padding-top: 0;
@@ -240,6 +259,53 @@ body {
 .team-member-details {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.social {
+    margin-top: 8px;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--iris-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: var(--ocean-color);
+}
+
+/* ========= Customers ========= */
+.customers-section {
+    padding-top: 130px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.customer-frame {
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+}
+
+.customer-frame:not(:last-child) {
+    margin-right: 24px;
 }
 
 /* ========= Footer ========= */
