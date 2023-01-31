@@ -226,7 +226,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 112px;
-
 }
 
 /* ========= Work Examples ========= */
@@ -297,6 +296,10 @@ body {
     justify-content: center;
 }
 
+.customer-item:not(:last-of-type) {
+    margin-right: 24px;
+}
+
 .customer-frame {
     width: 168px;
     height: 88px;
@@ -304,8 +307,10 @@ body {
     border-radius: 4px;
 }
 
-.customer-frame:not(:last-child) {
-    margin-right: 24px;
+.customer-logo {
+    margin: 16px 32px;
+    height: 56px;
+    width: 104px;
 }
 
 /* ========= Footer ========= */
